@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /img/
+Disallow: /mail/
+Disallow: /cpanel/
+Disallow: /shared/
+Disallow: /search.php
+Allow: /
+
