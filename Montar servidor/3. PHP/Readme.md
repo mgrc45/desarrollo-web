@@ -1,10 +1,10 @@
 # Instalación de PHP 7 en Windows 10
 
-Tras instalar el sevidor de apache 2.4.x podemos instalar el interprete de PHP el cual fue compilado para windows y dependiendo de la version necesitaremos un componente de Visual Studio.
+Tras instalar el servidor de apache 2.4.x podemos instalar el intérprete de PHP el cual fue compilado para windows y dependiendo de la versión necesitaremos un componente de Visual Studio.
 
 Debemos elegir es la versión **Thread Safe**, ya que es la que va con Apache, la **Non-Thread Safe** está mejorada para utilizar con Windows e IIS, pero no con Apache, por eso la elección.
 
-La mayoria de servidores en internet usan Apache sobre linux combinacion tambien conocida como LAMP (Linux Apache MySQL Php) si bien vamos a usar un PC con Windows para desarrollar es deseable que nuestras aplicaciones corran lo más parecido posible para evitar problemas de compatibilidad al montarlo en un servidor de terceros.
+La mayoría de servidores en internet usan Apache sobre linux combinación también conocida como LAMP (Linux Apache MySQL Php) si bien vamos a usar un PC con Windows para desarrollar es deseable que nuestras aplicaciones corran lo más parecido posible para evitar problemas de compatibilidad al montarlo en un servidor de terceros.
 
 ## Descargar
 
@@ -15,7 +15,7 @@ La mayoria de servidores en internet usan Apache sobre linux combinacion tambien
 
 1. Creamos el directorio de PHP en windows `C:\Program Files\PHP\`
 
-2. Descomprimimos el paquete `php-7.2.7-Win32-VC15-x64` en el directorio recien creado
+2. Descomprimimos el paquete `php-7.2.7-Win32-VC15-x64` en el directorio recién creado
 
 3. Renombramos `php.ini-development` por `php.ini`
 
@@ -28,7 +28,7 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 #END PHP INSTALLER EDITS - REMOVE ONLY ON UNINSTALL
 ~~~
 
-5. Remplazamos la siguiente linea
+5. Remplazamos la siguiente línea
 
 ~~~
 #
@@ -50,7 +50,7 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 
 ## Configurar
 
-Para realizar las configuraciones persistentes se debera editar el archivo de configuracion  `php.ini` ubicado en el directorio  `C:\Program Files\PHP\`
+Para realizar las configuraciones persistentes se deberá editar el archivo de configuración  `php.ini` ubicado en el directorio  `C:\Program Files\PHP\`
 
 **Codificación de caracteres**
 
@@ -58,25 +58,25 @@ Para realizar las configuraciones persistentes se debera editar el archivo de co
 default_charset = "UTF-8"
 ~~~
 
-**Tamaño maximo de subida**
+**Tamaño máximo de subida**
 
 ~~~
 upload_max_filesize = 25M
 ~~~
 
-**Compresion transparente**
+**Compresión transparente**
 
-Ahorra ancho de banda al usar el algoritmo de compression gzip, sin embargo tiene que ser habilitado de forma manual. 
+Ahorra ancho de banda al usar el algoritmo de compresión gzip, sin embargo, tiene que ser habilitado de forma manual. 
 
 ~~~
 zlib.output_compression = On
 zlib.output_compression_level = 9
 ~~~
-Al estar activa la compresion el servidor envia un header **Content-Encoding: gzip**
+Al estar activa la compresión el servidor envía un header **Content-Encoding: gzip**
 
-**Depuracion de errores**
+**Depuración de errores**
 
-Estas opciones estan definidas para para depuracion y deberan ser cambiadas para produccion
+Estas opciones están definidas para para depuración y deberán ser cambiadas para producción
 
 ~~~
 error_reporting = E_ALL & ~E_NOTICE
