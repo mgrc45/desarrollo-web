@@ -1,6 +1,6 @@
 ## Servicios
 
-Algunos de los siguientes servicios no estan disponibles debido a la compatibilidad de la compilacion con windows. En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuracion de PHP. Asi como tambien borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
+Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows. En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuración de PHP. Así como también borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
 
 | Extensiones | Descripcion |
 | --- | --- |
@@ -31,7 +31,7 @@ Algunos de los siguientes servicios no estan disponibles debido a la compatibili
 | XML-RPC | Funciones de XML |
 | XLS | Manejo de hojas de excel, XML y DOM Document |
 
-Al interior del archivo de configuracion `php.ini` puede habilitar las extensiones unicamente removiendo el signo `;` que sirve para definir los comentarios.
+Al interior del archivo de configuración `php.ini` puede habilitar las extensiones únicamente removiendo el signo `;` que sirve para definir los comentarios.
 
 ~~~
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -100,7 +100,7 @@ Al interior del archivo de configuracion `php.ini` puede habilitar las extension
 ;extension=xsl
 ~~~
 
-Las extensiones que recomiendo descomentar son las siguientes
+Las extensiones que recomiendo des comentar son las siguientes
 
 ~~~
 extension=imap
