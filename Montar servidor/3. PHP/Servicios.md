@@ -126,5 +126,4 @@ extension=mbstring
 extension=exif      ; Must be after mbstring as it depends on it
 extension=mysqli
 extension=openssl
-extension=snmp
 ~~~
