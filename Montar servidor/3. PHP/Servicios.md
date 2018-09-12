@@ -2,7 +2,7 @@
 
 Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows.
 
-Define el directorio donde obtener las extensiones, remplazamos la siguiente línea
+Define el directorio donde obtener las extensiones
 
 ~~~
 ; Directory in which the loadable extensions (modules) reside.
@@ -16,7 +16,7 @@ Define el directorio donde obtener las extensiones, remplazamos la siguiente lí
 extension_dir = "C:/Program Files/PHP/ext"
 ~~~
 
-Para validar los modulos que se encuentren cargados puede iniciar PHP manualmente desde la linea de comandos `C:\Program Files\PHP\php.exe -m` 
+Para validar los modulos cargados, puede iniciar PHP manualmente desde la linea de comandos `C:\Program Files\PHP\php.exe -m` 
 
 En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuración de PHP. Así como también borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
 
