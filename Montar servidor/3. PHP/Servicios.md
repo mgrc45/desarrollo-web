@@ -1,6 +1,6 @@
 ## Servicios
 
-Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows. Todos los cambios en la configuración de PHP se realizan al interior del archivo de configuración `C:\Program Files\PHP\php.ini`.
+Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows. Todos los cambios en la configuración de PHP se realizan al interior del archivo de configuración `C:\Program Files\PHP\php.ini`
 
 Define el directorio donde obtener las extensiones
 
@@ -47,7 +47,7 @@ Para validar los modulos cargados, puede iniciar PHP manualmente desde la linea 
 | XML-RPC | Funciones de XML |
 | XLS | Manejo de hojas de excel, XML y DOM Document |
 
-Para habilitar las extensiones únicamente remueva el signo `;` que sirve para definir los comentarios.
+Para habilitar las extensiones únicamente remueva el signo `;` que sirve para definir los comentarios
 
 ~~~
 ;;;;;;;;;;;;;;;;;;;;;;
