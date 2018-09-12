@@ -2,7 +2,7 @@
 
 Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows.
 
-Para indicar al servicio de PHP el directorio donde obtener las extensiones, remplazamos la siguiente línea
+Define el directorio donde obtener las extensiones, remplazamos la siguiente línea
 
 ~~~
 ; Directory in which the loadable extensions (modules) reside.
