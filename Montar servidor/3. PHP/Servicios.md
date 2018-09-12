@@ -1,6 +1,6 @@
 ## Servicios
 
-Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows.
+Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows. Todos los cambios en la configuración de PHP se realizan al interior del archivo de configuración `C:\Program Files\PHP\php.ini`.
 
 Define el directorio donde obtener las extensiones
 
@@ -16,9 +16,7 @@ Define el directorio donde obtener las extensiones
 extension_dir = "C:/Program Files/PHP/ext"
 ~~~
 
-Para validar los modulos cargados, puede iniciar PHP manualmente desde la linea de comandos `C:\Program Files\PHP\php.exe -m` 
-
-En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuración de PHP. Así como también borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
+Para validar los modulos cargados, puede iniciar PHP manualmente desde la linea de comandos `php.exe -m` 
 
 | Extensiones | Descripcion |
 | --- | --- |
@@ -49,7 +47,7 @@ En caso de presentar errores recomiendo habilitar `display_startup_errors` dentr
 | XML-RPC | Funciones de XML |
 | XLS | Manejo de hojas de excel, XML y DOM Document |
 
-Al interior del archivo de configuración `php.ini` puede habilitar las extensiones únicamente removiendo el signo `;` que sirve para definir los comentarios.
+Para habilitar las extensiones únicamente remueva el signo `;` que sirve para definir los comentarios.
 
 ~~~
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -127,3 +125,5 @@ extension=exif      ; Must be after mbstring as it depends on it
 extension=mysqli
 extension=openssl
 ~~~
+
+En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuración de PHP. Así como también borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
