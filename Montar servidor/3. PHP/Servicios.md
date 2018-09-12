@@ -1,6 +1,24 @@
 ## Servicios
 
-Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows. En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuración de PHP. Así como también borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
+Algunos de los siguientes servicios no están disponibles debido a la compatibilidad de la compilación con windows.
+
+Para indicar al servicio de PHP el directorio donde obtener las extensiones, remplazamos la siguiente línea
+
+~~~
+; Directory in which the loadable extensions (modules) reside.
+; http://php.net/extension-dir
+; extension_dir = "./"
+; On windows:
+; extension_dir = "ext"
+~~~
+
+~~~
+extension_dir = "C:/Program Files/PHP/ext"
+~~~
+
+Para validar los modulos que se encuentren cargados puede iniciar PHP manualmente desde la linea de comandos `C:\Program Files\PHP\php.exe -m` 
+
+En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuración de PHP. Así como también borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
 
 | Extensiones | Descripcion |
 | --- | --- |
