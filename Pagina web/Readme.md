@@ -3,4 +3,6 @@
 | Archivo | Descripcion |
 | --- | --- |
 | robots.txt | Es usado para especificar a los **robots** archivos o directorios que seran omitidos |
-
+| \_getdata.php | Muestra la información obtenida por parte del metodo **GET** |
+| \_posteddata.php | Muestra la información obtenida por parte del metodo **POST** |
+| \_info.php | Muestra la configuración del servidor |
