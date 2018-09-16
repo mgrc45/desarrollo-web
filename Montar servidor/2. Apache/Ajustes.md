@@ -108,24 +108,3 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 ## Licencia
 
 Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
-
-## Modulos PHP 5
-
-~~~
-<IfModule mod_php5.c>
-# Deshabilita el uso de variables globales
-php_flag register_globals Off
-
-# Habilita la compresion gzip
-php_flag zlib.output_compression on
-php_value zlib.output_compression_level 9
-
-# Tamaño maximo del archivo
-php_value upload_max_filesize 8M
-
-# Magic Quotes
-php_flag magic_quotes_gpc Off
-php_flag magic_quotes_runtime Off
-#php_admin_flag magic_quotes_sybase = Off
-</IfModule>
-~~~
