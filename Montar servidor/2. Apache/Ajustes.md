@@ -96,9 +96,9 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 </IfModule>
 ~~~
 
-http://new.jobs.mx
-
 ~~~
+# http://new.jobs.mx
+
 RewriteCond %{HTTP_HOST} ^(new|s|e)\.jobs\.mx$
 RewriteRule ^/$ /index.php?mode=%1 [L]
 ~~~
@@ -111,6 +111,8 @@ RewriteRule ^/(.*)$ - [G,NC]
 ~~~
 
 ~~~
+# http://127.0.0.1/BCN/filter
+
 RewriteCond %{HTTP_HOST} jobs.mx
 RewriteRule ^/([A-Z]+)/filter$ /index.php?state=$1&%{QUERY_STRING}
 ~~~
@@ -132,6 +134,8 @@ RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)/(.+).pdf$ /shared/pdf/offer_pdf.php?sta
 ~~~
 
 ~~~
+# http://www.elfos.mx
+
 RewriteCond %{HTTP_HOST} "elfos.mx" [OR]
 RewriteCond %{HTTP_HOST} "www.elfos.mx"
 RewriteRule ^(.*)$ http://www.wix.com/xpublicidad/elfos [P,L]
