@@ -2,5 +2,5 @@
 
 | Archivo | Descripcion |
 | --- | --- |
-| robots.txt | Es usado para especificar a los **robots** los archivos o directorios que seran omitidos |
+| robots.txt | Es usado para especificar a los **robots** archivos o directorios que seran omitidos |
 
