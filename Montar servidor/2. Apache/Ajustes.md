@@ -107,9 +107,17 @@ RewriteRule ^/([A-Z]+)/filter$ /index.php?state=$1&%{QUERY_STRING}
 ~~~
 
 ~~~
+# http://127.0.0.1/AGS/001/533?hidden=1
 RewriteCond %{HTTP_HOST} jobs.mx
 RewriteCond %{QUERY_STRING} ^hidden=([0-1])$ [NC]
 RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)$ /offer.php?state=$1&city=$2&id=$3&hidden=%1 [L]
+~~~
+
+~~~
+# http://127.0.0.1/AGS/001/533/diseñador_grafico.pdf
+RewriteCond %{HTTP_HOST} jobs.mx
+RewriteCond %{QUERY_STRING} ^$ [NC] 
+RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)/(.+).pdf$ /shared/pdf/offer_pdf.php?state=$1&city=$2&id=$3&pdf_name=$4 [L] 
 ~~~
 
 http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html<br/>
