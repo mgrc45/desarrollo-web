@@ -98,7 +98,7 @@ http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url (depreciado)<br/>
 http://httpd.apache.org/docs/2.4/en/howto/access.html#rewrite<br/>
 http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule<br/>
 
-Regex
+Regex<br/>
 https://regex101.com/<br/>
 http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex<br/>
 
