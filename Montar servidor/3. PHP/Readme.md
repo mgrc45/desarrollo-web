@@ -84,6 +84,14 @@ display_errors = On
 display_startup_errors = On
 ~~~
 
+**Header X-Powered-By**
+
+Evitamos mostrar el header **X-Powered-By** el cual incluye la version de PHP que estamos usando
+
+~~~
+expose_php = Off
+~~~
+
 ## Referencias
 
 * http://php.net/manual/es/ini.core.php
