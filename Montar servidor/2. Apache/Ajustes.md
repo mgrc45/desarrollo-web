@@ -96,6 +96,16 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 </IfModule>
 ~~~
 
+~~~
+RewriteCond %{HTTP_HOST} ^(new|s|e)\.jobs\.mx$
+RewriteRule ^/$ /index.php?mode=%1 [L]
+~~~
+
+~~~
+RewriteCond %{HTTP_HOST} jobs.mx
+RewriteRule ^/([A-Z]+)/filter$ /index.php?state=$1&%{QUERY_STRING}
+~~~
+
 http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html<br/>
 http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url (depreciado)<br/>
 http://httpd.apache.org/docs/2.4/en/howto/access.html#rewrite<br/>
