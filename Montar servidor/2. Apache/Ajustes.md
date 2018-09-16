@@ -106,6 +106,12 @@ RewriteCond %{HTTP_HOST} jobs.mx
 RewriteRule ^/([A-Z]+)/filter$ /index.php?state=$1&%{QUERY_STRING}
 ~~~
 
+~~~
+RewriteCond %{HTTP_HOST} jobs.mx
+RewriteCond %{QUERY_STRING} ^hidden=([0-1])$ [NC]
+RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)$ /offer.php?state=$1&city=$2&id=$3&hidden=%1 [L]
+~~~
+
 http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html<br/>
 http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url (depreciado)<br/>
 http://httpd.apache.org/docs/2.4/en/howto/access.html#rewrite<br/>
