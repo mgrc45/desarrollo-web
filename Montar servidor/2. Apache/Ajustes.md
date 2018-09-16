@@ -36,15 +36,6 @@ Reviso que no sea accesible el archivo de configuración `.htaccess`
 </Files>
 ~~~
 
-Agregamos la siguiente linea
-
-~~~
-# Evito que se pueda acceder directamente a los archivos que inicien con _ 
-<Files "_*">
-    Require all denied
-</Files>
-~~~
-
 http://httpd.apache.org/docs/2.4/en/mod/core.html#files
 
 ### Personalización: Definimos nuestras páginas de error
