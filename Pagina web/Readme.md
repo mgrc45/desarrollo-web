@@ -6,3 +6,4 @@
 | \_getdata.php | Muestra la información obtenida por parte del metodo **GET** | Diagnostico |
 | \_posteddata.php | Muestra la información obtenida por parte del metodo **POST** | Diagnostico |
 | \_info.php | Muestra la configuración del servidor | Diagnostico |
+| .htaccess | Define la configuración del servidor | Configuración |
