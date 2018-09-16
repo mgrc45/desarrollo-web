@@ -79,9 +79,9 @@ Al estar activa la compresión el servidor envía un header **Content-Encoding: 
 Estas opciones están definidas para para depuración y deberán ser cambiadas para producción
 
 ~~~
-error_reporting = E_ALL & ~E_NOTICE
 display_errors = On
 display_startup_errors = On
+error_reporting = E_ALL & ~E_NOTICE
 ~~~
 
 **Header X-Powered-By**
