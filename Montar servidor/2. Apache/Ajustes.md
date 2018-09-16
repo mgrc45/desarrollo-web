@@ -75,29 +75,21 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 
 ~~~
 <IfModule rewrite_module>
- Options +FollowSymLinks
  RewriteEngine On
  RewriteCond %{HTTP_HOST} ^(localhost|127.0.0.1)$
- #http://localhost/empleos
- # RewriteRule ^empleos$ /empleos/ [R=permanent]
- #http://localhost/empleos/
- # RewriteRule ^empleos/$ /empleos/navi.php [L]
- #http://localhost/empleos/533
- # RewriteRule ^empleos/([0-9]+)$ /empleos/offer.php?id=$1 [L]
- #http://localhost/empleos/Distrito-Federal
- # RewriteRule ^empleos/([A-Za-z-]+)$ /empleos/$1/ [R=permanent]
- #http://localhost/empleos/Distrito-Federal/
- # RewriteRule ^empleos/([A-Za-z-]+)/$ /empleos/navi.php?stateStr=$1 [L]
- #http://localhost/empleos/Distrito-Federal/533
- # RewriteRule ^empleos/([A-Za-z-]+)/([0-9]+)$ /empleos/offer.php?stateStr=$1&id=$2 [L]
- #http://localhost/empleos/Distrito-Federal/Iztacalco
- # RewriteRule ^empleos/([A-Za-z-]+)/([A-Za-z-]+)$ /empleos/$1/$2/ [R=permanent]
- #http://localhost/empleos/Distrito-Federal/Iztacalco/
- # RewriteRule ^empleos/([A-Za-z-]+)/([A-Za-z-]+)/$ /empleos/navi.php?stateStr=$1&cityStr=$2 [L]
- #http://localhost/empleos/Distrito-Federal/Iztacalco/533
- # RewriteRule ^empleos/([A-Za-z-]+)/([A-Za-z-]+)/([0-9]+)$ /empleos/offer.php?stateStr=$1&cityStr=$2&id=$3 [L]
- #http://localhost/email/imagenes/001/banner01.jpg
- # RewriteRule ^email/imagenes/([0-9]+)/(.+)$ /email/imagenes.php?id=$1&name=$2 [L] 
+ 
+ #http://localhost/CHP
+ #http://localhost/CHP/
+ RewriteRule ^([A-Z]+)$ /$1/ [R=permanent]
+ RewriteRule ^([A-Z]+)/$ /navi.php?estado=$1 [L]
+ 
+ #http://localhost/CHP/001
+ #http://localhost/CHP/001/
+ RewriteRule ^([A-Z]+)/([0-9]+)$ /$1/$2/ [R=permanent]
+ RewriteRule ^([A-Z]+)/([0-9]+)/$ /navi.php?estado=$1&mun=$2 [L]
+ 
+ #http://localhost/CHP/001/533
+ RewriteRule ^([A-Z]+)/([0-9]+)/([0-9]+)$ /post.php?estado=$1&id=$3 [L]
 </IfModule>
 ~~~
 
