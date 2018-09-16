@@ -96,9 +96,18 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 </IfModule>
 ~~~
 
+http://new.jobs.mx
+
 ~~~
 RewriteCond %{HTTP_HOST} ^(new|s|e)\.jobs\.mx$
 RewriteRule ^/$ /index.php?mode=%1 [L]
+~~~
+
+~~~
+# http://bcn.jobs.mx/robots.txt
+
+RewriteCond %{HTTP_HOST} !^(s.|e.|)jobs\.mx$ [NC] 
+RewriteRule ^/(.*)$ - [G,NC]
 ~~~
 
 ~~~
@@ -120,13 +129,6 @@ RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)$ /offer.php?state=$1&city=$2&id=$3&hidd
 RewriteCond %{HTTP_HOST} jobs.mx
 RewriteCond %{QUERY_STRING} ^$ [NC] 
 RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)/(.+).pdf$ /shared/pdf/offer_pdf.php?state=$1&city=$2&id=$3&pdf_name=$4 [L] 
-~~~
-
-~~~
-# http://bcn.jobs.mx/robots.txt
-
-RewriteCond %{HTTP_HOST} !^(s.|e.|)aejobs\.mx$ [NC] 
-RewriteRule ^/(.*)$ - [G,NC]
 ~~~
 
 ~~~
