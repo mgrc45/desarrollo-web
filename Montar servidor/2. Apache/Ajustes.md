@@ -93,14 +93,14 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 </IfModule>
 ~~~
 
-http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html 
-http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url (depreciado) 
-http://httpd.apache.org/docs/2.4/en/howto/access.html#rewrite 
-http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule 
+http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html<br/>
+http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url (depreciado)<br/>
+http://httpd.apache.org/docs/2.4/en/howto/access.html#rewrite<br/>
+http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule<br/>
 
 Regex
-https://regex101.com/ 
-http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex
+https://regex101.com/<br/>
+http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex<br/>
 
 ## Autores
 
