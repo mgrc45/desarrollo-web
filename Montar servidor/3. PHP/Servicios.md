@@ -13,7 +13,7 @@ Define el directorio donde obtener las extensiones
 ~~~
 
 ~~~
-extension_dir = "C:/Program Files/PHP/ext"
+extension_dir = "C:\Program Files\PHP\ext"
 ~~~
 
 Para validar los modulos cargados, puede iniciar PHP manualmente desde la linea de comandos `php.exe -m` 
