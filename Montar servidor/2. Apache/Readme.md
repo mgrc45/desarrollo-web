@@ -17,10 +17,11 @@ Motivo por el cual usaremos una versión compilada de terceros [apachelounge.com
 
 2. Descomprimimos el contenido de `httpd-2.4.34-win64-VC15.zip\Apache24\` en el directorio recien creado
 
-3. Cambiamos la ruta del servidor dentro del archivo de configuración `C:\Program Files\Apache\conf\httpd.conf`
+3. Cambiamos la ruta y definimos el nombre del servidor dentro del archivo de configuración `C:\Program Files\Apache\conf\httpd.conf`
 
 ~~~
-Define SRVROOT "C:/Program Files/Apache"
+Define SRVROOT "C:\Program Files\Apache"
+ServerName localhost
 ~~~
 
 4. Ejecutamos la consola `cmd` como administrador
