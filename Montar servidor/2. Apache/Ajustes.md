@@ -126,6 +126,13 @@ RewriteCond %{HTTP_HOST} ^([a-z]+)\.jobs\.mx$
 RewriteRule ^/$ /jobs.php?state=%1 [L]
 ~~~
 
+~~~
+# http://chp.aejobs.mx/001/ -> /aejobs.php?state=chp&city=001
+
+RewriteCond %{HTTP_HOST} ^([a-z]+)\.aejobs\.mx$
+RewriteRule ^/([0-9]+)/$ /aejobs.php?state=%1&city=$1 [L] 
+~~~
+
 Rutas
 
 ~~~
