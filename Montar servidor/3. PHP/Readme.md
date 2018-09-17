@@ -64,6 +64,19 @@ default_charset = "UTF-8"
 upload_max_filesize = 25M
 ~~~
 
+**Directorio de subida**
+
+~~~
+upload_tmp_dir = "C:/uploads"
+~~~
+
+**Directorio de extensiones**
+
+~~~
+extension_dir = "C:/Program Files/PHP/ext"
+#extension_dir = "C:\Program Files\PHP\ext"
+~~~
+
 **Compresión transparente**
 
 Ahorra ancho de banda al usar el algoritmo de compresión gzip, sin embargo, tiene que ser habilitado de forma manual. 
