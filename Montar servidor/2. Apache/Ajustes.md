@@ -99,7 +99,7 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 Subdominios
 
 ~~~
-# http://WWW.jobs.mx/ -> http://jobs.mx/ ó http://www.jobs.mx -> http://jobs.mx/
+# http://www.jobs.mx -> http://jobs.mx/
 
 RewriteCond %{HTTP_HOST} ^www\.jobs\.mx$ [NC]
 RewriteRule ^/?$ "http\:\/\/jobs\.mx" [R=permanent,L] 
