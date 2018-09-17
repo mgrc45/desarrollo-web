@@ -1,0 +1,58 @@
+AddDefaultCharset utf-8
+
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule headers_module>
+ Header unset X-Powered-By
+</IfModule>
+
+<IfModule rewrite_module>
+ RewriteEngine On
+ RewriteCond %{HTTP_HOST} ^(localhost|127.0.0.1)$
+ 
+ #http://localhost/CHP
+ #http://localhost/CHP/
+ RewriteRule ^([A-Z]+)$ /$1/ [R=permanent]
+ RewriteRule ^([A-Z]+)/$ /navi.php?edo=$1 [L]
+ 
+ #http://localhost/CHP/001/
+ RewriteRule ^([A-Z]+)/([0-9]+)/$ /navi.php?edo=$1&mun=$2 [L]
+ 
+ #http://localhost/533 
+ #http://localhost/CHP/533
+ #http://localhost/CHP/001/533
+ RewriteRule ^([0-9]+)$ /post.php?id=$1 [L]
+ RewriteRule ^([A-Z]+)/([0-9]+)$ /post.php?edo=$1&id=$2 [L]
+ RewriteRule ^([A-Z]+)/([0-9]+)/([0-9]+)$ /post.php?edo=$1&id=$3 [L]
+ 
+ #http://localhost/mail/imgs/001/banner01.jpg
+ RewriteRule ^mail/imgs/([0-9]+)/(.+)$ /mail/imagenes.php?id=$1&name=$2 [L] 
+</IfModule>
+
+<IfModule php7_module>
+ php_value default_charset "UTF-8"
+ 
+ #Deshabilita el uso de variables globales
+ php_flag register_globals Off
+ 
+ #Habilita la compresion gzip
+ php_flag zlib.output_compression on
+ php_value zlib.output_compression_level 9
+ 
+ #Tamaño maximo del archivo
+ php_value upload_max_filesize 25M
+ #php_value upload_tmp_dir "uploads"
+ #php_value date.timezone "America/Mexico_City"
+ 
+ #Produccion
+ #php_flag display_errors Off
+ #php_flag display_startup_errors Off
+ # E_ALL & ~E_DEPRECATED & ~E_STRICT
+ #php_value error_reporting 22527
+</IfModule>
+
+# Evito que se pueda acceder directamente a los archivos que inicien con _ 
+<Files "_+">
+ Require all denied
+</Files>
