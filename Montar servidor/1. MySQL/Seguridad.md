@@ -1,8 +1,6 @@
-# Cómo resetear la contraseña del usuario root de MySQL Server
+## Cómo resetear la contraseña del usuario root de MySQL Server
 
-## Desde windows
-
-Para Windows realizar lo siguiente:
+**Para Windows realizar lo siguiente:**
 
 1. Sí MySQL Server está instalado como servicio. Detener el servicio
 2. Abrir una consola de comandos `cmd`
