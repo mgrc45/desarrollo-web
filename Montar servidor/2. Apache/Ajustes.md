@@ -59,6 +59,12 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 
 ## Personalización: Redirijo las paginas
 
+Descomentar la siguiente linea
+
+~~~
+LoadModule rewrite_module modules/mod_rewrite.so
+~~~
+
 **RewriteLogLevel 0**: Este es el nivel predefinido usado por el archivo `httpd.conf`<br/>
 **RewriteLogLevel 1**: Este es el nivel obligatorio usado por un archivo `.htaccess`
 
