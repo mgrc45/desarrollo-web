@@ -58,7 +58,7 @@ DocumentRoot "${SRVROOT}/htdocs"
 ~~~
 
 ~~~
-DocumentRoot "C:/Users/Usuario/Google Drive/www"
+DocumentRoot "C:\Users\Usuario\Google Drive\www"
 ~~~
 
 4. Cambiar la ubicación de la carpeta donde tomara los archivos
@@ -94,7 +94,7 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 ~~~
 
 ~~~
-<Directory "C:/Users/Usuario/Google Drive/www">
+<Directory "C:\Users\Usuario\Google Drive\www">
     Options +FollowSymLinks -ExecCGI -Includes -Multiviews -Indexes
     AllowOverride All
     Require all granted
@@ -117,16 +117,16 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 | Indexes | Devolverá una lista con los contenidos del directorio usando mod_autoindex |
 | MultiViews | Devuelve contenido diferente de forma transparente usando mod_negotiation su uso se puede observar en el header "Content-Location:" |
 
-5. Por seguridad evitamos mostrar la version del servidor
-
-~~~
-ServerTokens ProductOnly
-~~~
-
-6. Podemos elegir la codificación predeterminada de caracteres
+5. Podemos elegir la codificación predeterminada de caracteres
 
 ~~~
 AddDefaultCharset utf-8
+~~~
+
+6. Por seguridad evitamos mostrar la version del servidor
+
+~~~
+ServerTokens ProductOnly
 ~~~
 
 **Referencias**
