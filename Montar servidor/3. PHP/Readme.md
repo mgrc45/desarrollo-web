@@ -58,15 +58,10 @@ Para realizar las configuraciones persistentes se deberá editar el archivo de c
 default_charset = "UTF-8"
 ~~~
 
-**Tamaño máximo de subida**
+**Tamaño y directorio de subida**
 
 ~~~
 upload_max_filesize = 25M
-~~~
-
-**Directorio de subida**
-
-~~~
 upload_tmp_dir = "C:\uploads"
 ~~~
 
