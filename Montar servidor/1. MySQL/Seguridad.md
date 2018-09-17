@@ -42,5 +42,5 @@ mysql>quit;
 3. Iniciar nuevamente el servicio de MySQL usando el comando `/etc/init.d/mysql start`
 
 ### Fuentes
-https://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html
+https://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html<br/>
 http://ingmmurillo.blogspot.mx/2011/03/como-resetear-la-contrasena-del-usuario.html
