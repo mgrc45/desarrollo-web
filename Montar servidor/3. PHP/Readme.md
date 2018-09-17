@@ -65,7 +65,7 @@ upload_max_filesize = 25M
 upload_tmp_dir = "C:\uploads"
 ~~~
 
-[Zona horaria](http://php.net/manual/es/timezones.america.php)
+**Zona horaria**
 
 ~~~
 date.timezone = "America/Mexico_City"
