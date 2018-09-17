@@ -96,6 +96,8 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 </IfModule>
 ~~~
 
+Subdominios
+
 ~~~
 # http://WWW.jobs.mx/ -> http://jobs.mx/ ó http://www.jobs.mx -> http://jobs.mx/
 
@@ -123,6 +125,8 @@ RewriteRule ^/(.*)$ - [G,NC]
 RewriteCond %{HTTP_HOST} ^([a-z]+)\.jobs\.mx$ 
 RewriteRule ^/$ /jobs.php?state=%1 [L]
 ~~~
+
+Rutas
 
 ~~~
 # http://127.0.0.1/BCN/filter
