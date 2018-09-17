@@ -144,6 +144,12 @@ RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)$ /offer.php?state=$1&city=$2&id=$3&hidd
 ~~~
 
 ~~~
+# http://127.0.0.1/AGS/001/533?hidden=1
+
+RewriteRule ^/([A-Z]+)/([0-9]+)/([0-9]+)$ /offer.php?state=$1&city=$2&id=$3&%{QUERY_STRING} [L] 
+~~~
+
+~~~
 # http://127.0.0.1/AGS/001/533/diseñador_grafico.pdf
 
 RewriteCond %{HTTP_HOST} jobs.mx
