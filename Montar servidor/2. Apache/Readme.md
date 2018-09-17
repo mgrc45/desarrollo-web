@@ -21,7 +21,7 @@ Motivo por el cual usaremos una versión compilada de terceros [apachelounge.com
 
 ~~~
 Define SRVROOT "C:\Program Files\Apache"
-ServerName localhost
+ServerName localhost:80
 ~~~
 
 4. Ejecutamos la consola `cmd` como administrador
