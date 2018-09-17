@@ -97,6 +97,13 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 ~~~
 
 ~~~
+# http://WWW.jobs.mx/ -> http://jobs.mx/ ó http://www.jobs.mx -> http://jobs.mx/
+
+RewriteCond %{HTTP_HOST} ^www\.jobs\.mx$ [NC]
+RewriteRule ^/?$ "http\:\/\/jobs\.mx" [R=permanent,L] 
+~~~
+
+~~~
 # http://new.jobs.mx
 
 RewriteCond %{HTTP_HOST} ^(new|s|e)\.jobs\.mx$
@@ -104,10 +111,17 @@ RewriteRule ^/$ /index.php?mode=%1 [L]
 ~~~
 
 ~~~
-# http://bcn.jobs.mx/robots.txt
+# http://e.jobs.mx/robots.txt
 
 RewriteCond %{HTTP_HOST} !^(s.|e.|)jobs\.mx$ [NC] 
 RewriteRule ^/(.*)$ - [G,NC]
+~~~
+
+~~~
+# http://chp.jobs.mx -> /jobs.php?state=chp
+
+RewriteCond %{HTTP_HOST} ^([a-z]+)\.jobs\.mx$ 
+RewriteRule ^/$ /jobs.php?state=%1 [L]
 ~~~
 
 ~~~
