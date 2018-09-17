@@ -57,7 +57,7 @@ Redirect permanent /rss/comentarios.xml http://feeds.feedburner.com/my_feef_url
 
 http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 
-## Personalización: Redirijo las paginas
+### Personalización: Redirijo las paginas
 
 Descomentar la siguiente linea
 
