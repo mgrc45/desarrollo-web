@@ -67,7 +67,7 @@ upload_max_filesize = 25M
 **Directorio de subida**
 
 ~~~
-upload_tmp_dir = "C:/uploads"
+upload_tmp_dir = "C:\uploads"
 ~~~
 
 **Directorio de extensiones**
