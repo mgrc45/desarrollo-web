@@ -73,8 +73,7 @@ upload_tmp_dir = "C:/uploads"
 **Directorio de extensiones**
 
 ~~~
-extension_dir = "C:/Program Files/PHP/ext"
-#extension_dir = "C:\Program Files\PHP\ext"
+extension_dir = "C:\Program Files\PHP\ext"
 ~~~
 
 **Compresión transparente**
