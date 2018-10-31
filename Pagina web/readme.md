@@ -2,6 +2,7 @@
 
 | Archivo | Descripción | Categoria |
 | --- | --- | --- |
+| login.php | Es un control de acceso que implementa seguridad e impide el acceso a zonas restringidas | Seguridad |
 | robots.txt | Es usado para especificar a los **robots** archivos o directorios que seran omitidos | Indexado |
 | \_getdata.php | Muestra la información obtenida por parte del metodo **GET** | Diagnostico |
 | \_posteddata.php | Muestra la información obtenida por parte del metodo **POST** | Diagnostico |
