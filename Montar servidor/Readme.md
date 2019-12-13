@@ -90,6 +90,9 @@ Con la finalidad de incrementar la compatibilidad usaremos la versión **7.2.24*
 | --- | --- | --- |
 | [2019-08-14](https://www.apachelounge.com/download/VS16/binaries/httpd-2.4.41-win64-VS16.zip) | [2019-09-30](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.28-winx64.zip) | [2019-10-22](https://windows.php.net/downloads/releases/archives/php-7.2.24-Win32-VC15-x64.zip) |
 
+Paquetes necesarios
+> [Microsoft Visual C++ 2015-2019 Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+
 ## Referencias
 
 * https://packages.debian.org/search?keywords=php
