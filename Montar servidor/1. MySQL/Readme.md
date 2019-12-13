@@ -4,11 +4,11 @@ Vinculos de descarga
 
 1. [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 2. [MySQL Archived Versions](https://downloads.mysql.com/archives/installer/)
-3. [MySQL Mirror](https://downloads.mysql.com/archives/installer/)
+3. [MySQL Mirror](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/)
 
 Únicamente motor de base de datos con instalador para windows
 
-> [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
+> [mysql-5.7.28-winx64.msi](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.28-winx64.msi)
 
 Explicación de las versiones
 
@@ -27,11 +27,11 @@ Explicación de los empaquetados
   <th>Nombre</th><th>Descripción</th>
  </tr>
  <tr>
-  <td><a href="https://dev.mysql.com/downloads/mysql/5.7.html">mysql-5.7.23-win64.zip</a></td>
+  <td>mysql-5.7.28-winx64.zip</td>
   <td>Únicamente motor de la base de datos para sistemas de 64 bits, sin instalador</td>
  </tr>
  <tr>
-  <td><a href="http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi">mysql-5.7.23-win64.msi</a></td>
+  <td>mysql-5.7.28-winx64.msi</td>
   <td>Únicamente motor de la base de datos para sistemas de 64 bits</td>
  </tr>
  <tr>
@@ -40,7 +40,7 @@ Explicación de los empaquetados
   <strong>m2</strong> indica que esta versión se encuentra en desarrollo.</td>
  </tr>
  <tr>
-  <td><a href="https://dev.mysql.com/downloads/windows/installer/5.7.html">mysql-installer-community-5.7.23.0.msi</a></td>
+  <td>mysql-installer-community-5.7.23.0.msi</td>
   <td><strong>installer-community</strong>, este paquete incluye: Instalador de windows (MSI), Herramienta de configuración (configuration wizard), 
   Conectores, Monitores, Proxy, Workbench ...</td>
  </tr>
