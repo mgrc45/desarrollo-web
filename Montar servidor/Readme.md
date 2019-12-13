@@ -74,19 +74,27 @@ mysql-server/bionic-updates,bionic-updates 5.7.28-0ubuntu0.18.04.4 all
 mysql-server-5.7/bionic-updates 5.7.28-0ubuntu0.18.04.4 amd64
   datos binarios de la base de datos del servidor MySQL y base de datos de configuración del sistema
 ```
+2. Comparamos las ultimas versiones
 
-2. Examinamos las versiones obtenidas para contrastarlas con los criterios antes mencionados
+| Versión | Windows x64 | Ubuntu | Debian 10 |
+| --- | --- | --- | --- |
+| Apache 2.4 | 41 | 29 | 38 |
+| MySQL 5.7 | 28 | 28 | 27 |
+| PHP 7 | 3.9 | 2.24 | 3.69 |
 
-Explicación de las versiones
+Con la finalidad de incrementar la compatibilidad usaremos la version **7.2.24** mismo que fue continua en revision.
 
-| Versión | Sub versión | Última modificación | Windows x64 | Ubuntu | Debian |
-| --- | --- | --- | --- | --- | --- |
-| Apache 2.4 | 29 |  | Soportada |  Soportada |  Soportada |
-| MySQL 5.7 | 28 | 27-Sep-2019 | Soportada |  Soportada |  Soportada |
-| PHP 7.2 | 24 |  | Soportada |  Soportada |  Soportada |
+3. Examinamos la fecha de última modificación de cada paquete para **Windows x64**
+
+| Apache 2.4.41 | MySQL 5.7.28 | PHP 7.2.24 |
+| --- | --- | --- |
+| [2019-08-14](https://www.apachelounge.com/download/VS16/binaries/httpd-2.4.41-win64-VS16.zip) | [2019-09-30](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.28-winx64.zip) | [2019-10-22](https://windows.php.net/downloads/releases/archives/php-7.2.24-Win32-VC15-x64.zip) |
 
 ## Referencias
 
+* https://packages.debian.org/search?keywords=php
+* https://packages.ubuntu.com/search?keywords=php
+* https://windows.php.net/downloads/releases/archives/
 * http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/
 
 ## Autores
