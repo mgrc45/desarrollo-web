@@ -82,7 +82,7 @@ mysql-server-5.7/bionic-updates 5.7.28-0ubuntu0.18.04.4 amd64
 | MySQL 5.7 | 28 | 28 | 27 |
 | PHP 7 | 3.9 | 2.24 | 3.69 |
 
-Con la finalidad de incrementar la compatibilidad usaremos la version **7.2.24** mismo que fue continua en revision.
+Con la finalidad de incrementar la compatibilidad usaremos la versión **7.2.24** de PHP mismo que continua en revision.
 
 3. Examinamos la fecha de última modificación de cada paquete para **Windows x64**
 
