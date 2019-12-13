@@ -1,12 +1,12 @@
 ## Descargar el motor de la base de datos (MySQL)
 
-Vinculos de descarga
+Vínculos de descarga
 
 1. [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 2. [MySQL Archived Versions](https://downloads.mysql.com/archives/installer/)
 3. [MySQL Mirror](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/)
 
-Únicamente motor de base de datos con instalador para windows
+Únicamente motor de base de datos con instalador para Windows
 
 > [mysql-5.7.28-winx64.msi](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.28-winx64.msi)
 
