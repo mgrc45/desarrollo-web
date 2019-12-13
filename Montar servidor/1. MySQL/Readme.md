@@ -1,11 +1,10 @@
 ## Descargar el motor de la base de datos (MySQL)
 
-Ruta del link de descarga
+Vinculos de descarga
 
-1. [MySQL Downloads](https://www.mysql.com/downloads/)
-2. [MySQL Product Archives](https://downloads.mysql.com/archives/)
-3. [MySQL Installer (Archived Versions)](https://downloads.mysql.com/archives/installer/)
-4. [mysql-installer-community-5.7.23.0.msi](https://dev.mysql.com/downloads/windows/installer/5.7.html)
+1. [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+2. [MySQL Archived Versions](https://downloads.mysql.com/archives/installer/)
+3. [MySQL Mirror](https://downloads.mysql.com/archives/installer/)
 
 Únicamente motor de base de datos con instalador para windows
 
@@ -55,7 +54,6 @@ Explicación de las liberaciones
 
 ## Referencias
 
-* https://dev.mysql.com/downloads/mysql/
 * https://downloads.mysql.com/archives/installer/
 * http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/
 
