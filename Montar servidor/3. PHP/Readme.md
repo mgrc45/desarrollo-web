@@ -4,18 +4,18 @@ Tras instalar el servidor de apache 2.4.x podemos instalar el intérprete de PHP
 
 Debemos elegir es la versión **Thread Safe**, ya que es la que va con Apache, la **Non-Thread Safe** está mejorada para utilizar con Windows e IIS, pero no con Apache, por eso la elección.
 
-La mayoría de servidores en internet usan Apache sobre linux combinación también conocida como LAMP (Linux Apache MySQL Php) si bien vamos a usar un PC con Windows para desarrollar es deseable que nuestras aplicaciones corran lo más parecido posible para evitar problemas de compatibilidad al montarlo en un servidor de terceros.
+La mayoría de servidores en internet usan Apache sobre linux combinación también conocida como LAMP (Linux Apache Mysql Php) si bien vamos a usar un PC con Windows para desarrollar es deseable que nuestras aplicaciones corran lo más parecido posible para evitar problemas de compatibilidad al montarlo en un servidor de terceros.
 
 ## Descargar
 
 * VC15: [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/15/release/VC_redist.x64.exe)
-* Paquete de PHP 7 compilado para windows [php-7.2.7-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.7-Win32-VC15-x64.zip)
+* Paquete de PHP 7 compilado para windows [php-7.2.24-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.24-Win32-VC15-x64.zip)
 
 ## Instalar
 
 1. Creamos el directorio de PHP en windows `C:\Program Files\PHP\`
 
-2. Descomprimimos el paquete `php-7.2.7-Win32-VC15-x64` en el directorio recién creado
+2. Descomprimimos el paquete `php-7.2.24-Win32-VC15-x64` en el directorio recién creado
 
 3. Renombramos `php.ini-development` por `php.ini`
 
